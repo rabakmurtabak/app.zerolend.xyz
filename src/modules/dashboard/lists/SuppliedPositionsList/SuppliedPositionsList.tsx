@@ -180,7 +180,7 @@ export const SuppliedPositionsList = () => {
               <Trans>Congrats! You now have special access to our Discord!</Trans>
             </Typography>
             <Trans>
-              As a liquidity provider, you will get roles (Shrimp/Shark/Whale) in our discord that give you access to exclusive channels.
+              As a liquidity provider, you will get roles (Shrimp/Shark/Whale) in our discord that give you exclusive access to private channels.
               Visit <a
                 href="https://guild.xyz/zerolend"
                 target="_blank"
@@ -188,7 +188,7 @@ export const SuppliedPositionsList = () => {
               >
                 Guild.xyz
               </a>{' '}
-              to learn more about the roles you can get.
+              to claim these roles.
             </Trans>
           </Warning>
         </>
