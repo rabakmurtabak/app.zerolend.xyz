@@ -227,7 +227,7 @@ export const GhoBorrowModalContent = ({
 
   if (borrowTxState.success)
     return (
-      <GhoBorrowSuccessView action={<Trans>Borrowed</Trans>} amount={amount} symbol={iconSymbol} />
+      <GhoBorrowSuccessView action={<Trans>Minted</Trans>} amount={amount} symbol={iconSymbol} />
     );
 
   return (
@@ -242,6 +242,18 @@ export const GhoBorrowModalContent = ({
           stableRate={poolReserve.stableBorrowAPY}
         />
       )}
+
+      <Typography sx={{ mb: 2 }}>
+        You are going to mint ONEZ. Minted ONEZ needs to be
+        repaid back with interest to release your locked collateral. To learn more about
+        how ONEZ works, visit our <a
+          href="https://docs.zerolend.xyz/onez"
+          target="_blank"
+          rel="noreferrer"
+        >
+          documentation
+        </a>.
+      </Typography>
 
       <AssetInput
         value={amount}
@@ -266,6 +278,8 @@ export const GhoBorrowModalContent = ({
           <BlockingError />
         </Typography>
       )}
+
+
 
       <TxModalDetails gasLimit={gasLimit}>
         <DetailsHFLine

@@ -62,11 +62,11 @@ export const GhoBorrowAssetsListItem = ({
   );
   const ghoApyRange: [number, number] | undefined = ghoUserDataFetched
     ? [
-        ghoUserData.userGhoAvailableToBorrowAtDiscount === 0
-          ? ghoReserveData.ghoBorrowAPYWithMaxDiscount
-          : userCurrentBorrowApy,
-        userBorrowApyAfterNewBorrow,
-      ]
+      ghoUserData.userGhoAvailableToBorrowAtDiscount === 0
+        ? ghoReserveData.ghoBorrowAPYWithMaxDiscount
+        : userCurrentBorrowApy,
+      userBorrowApyAfterNewBorrow,
+    ]
     : undefined;
 
   const props: GhoBorrowAssetsListItemProps = {
@@ -181,7 +181,7 @@ const GhoBorrowAssetsListItemDesktop = ({
       </ListColumn>
       <ListButtonsColumn>
         <Button disabled={borrowButtonDisable} variant="contained" onClick={onBorrowClick}>
-          <Trans>Borrow</Trans>
+          <Trans>Mint</Trans>
         </Button>
         <Button
           variant="outlined"
@@ -257,7 +257,7 @@ const GhoBorrowAssetsListItemMobile = ({
           sx={{ mr: 1.5 }}
           fullWidth
         >
-          <Trans>Borrow</Trans>
+          <Trans>Mint</Trans>
         </Button>
         <Button
           variant="outlined"

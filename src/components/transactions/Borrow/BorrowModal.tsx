@@ -33,7 +33,7 @@ export const BorrowModal = () => {
     <BasicModal open={type === ModalType.Borrow} setOpen={close}>
       <ModalWrapper
         action="borrow"
-        title={<Trans>Borrow</Trans>}
+        title={args.underlyingAsset == '0x90059c32eeeb1a2aa1351a58860d98855f3655ad' ? <Trans>Mint</Trans> : <Trans>Borrow</Trans>}
         underlyingAsset={args.underlyingAsset}
         keepWrappedSymbol={!borrowUnWrapped}
         requiredPermission={PERMISSION.BORROWER}

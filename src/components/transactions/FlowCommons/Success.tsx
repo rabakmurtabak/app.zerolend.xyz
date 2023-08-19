@@ -5,6 +5,7 @@ import { Trans } from '@lingui/macro';
 import { Box, Button, Link, SvgIcon, Typography, useTheme } from '@mui/material';
 import { ReactNode, useState } from 'react';
 import { WalletIcon } from 'src/components/icons/WalletIcon';
+
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
 import { Base64Token, TokenIcon } from 'src/components/primitives/TokenIcon';
 import { useModalContext } from 'src/hooks/useModal';
@@ -171,6 +172,38 @@ export const TxSuccessView = ({
               </Button>
             </Box>
           )}
+
+          <Box
+            sx={(theme) => ({
+              border:
+                theme.palette.mode === 'dark' ? `1px solid ${theme.palette.divider}` : 'none',
+              background: theme.palette.mode === 'dark' ? 'none' : '#F7F7F9',
+              borderRadius: '12px',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              mt: '24px',
+              pt: '8px'
+            })}
+          >
+            <Typography variant="description" color="text.primary" sx={{ mx: '24px' }}>
+              <Trans>
+                You now have special access to our Discord for providing liquidity! Join our guild page to get these special roles.
+              </Trans>
+            </Typography>
+            <Button
+              variant="outlined"
+              size="medium"
+              href='https://guild.xyz/zerolend'
+              target="_blank"
+              sx={{ mt: '8px', mb: '12px' }}
+            >
+              <Typography variant="buttonM" ml="4px">
+                Join our Guild
+              </Typography>
+            </Button>
+          </Box>
         </Box>
       </Box>
 

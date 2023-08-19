@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import { ReactNode, } from 'react';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
+import { Warning } from 'src/components/primitives/Warning';
 import { useModalContext } from 'src/hooks/useModal';
 import { useProtocolDataContext } from 'src/hooks/useProtocolDataContext';
 import { useRootStore } from 'src/store/root';
@@ -73,7 +74,31 @@ export const GhoBorrowSuccessView = ({ txHash, action, amount, symbol }: Success
 
         <Box
           sx={{
-            mt: 2,
+            mt: 3,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+          }}
+        >
+          <Warning severity="info" icon={false}>
+            <Typography>
+              Congrats for minting ONEZ 💸! You are now eligible to get the <b>ONEZ Minter</b> role in our Discord. Visit our <a
+                href="https://guild.xyz/zerolend"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Guild.xyz
+              </a>{' '}
+              page to claim this role.
+            </Typography>
+          </Warning>
+
+        </Box>
+
+        <Box
+          sx={{
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
