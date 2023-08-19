@@ -110,7 +110,7 @@ export const TokenLinkDropdown = ({
           <Box>
             <Box sx={{ px: 4, pt: 3, pb: 2 }}>
               <Typography variant="secondary12" color="text.secondary">
-                <Trans>ZeroLend aToken</Trans>
+                <Trans>ZeroLend z0Token</Trans>
               </Typography>
             </Box>
 
@@ -134,7 +134,7 @@ export const TokenLinkDropdown = ({
             >
               <TokenIcon symbol={poolReserve.iconSymbol} aToken={true} sx={{ fontSize: '20px' }} />
               <Typography variant="subheader1" sx={{ ml: 3 }} noWrap data-cy={`assetName`}>
-                {'a' + poolReserve.symbol}
+                {'z0' + poolReserve.symbol}
               </Typography>
             </MenuItem>
           </Box>
