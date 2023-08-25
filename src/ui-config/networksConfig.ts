@@ -69,7 +69,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
     // publicJsonRPCWSUrl: 'wss://eth-goerli.public.blastapi.io',
     // protocolDataUrl: '',
     baseUniswapAdapter: '0x0',
-    baseAssetSymbol: 'WETH',
+    baseAssetSymbol: 'ETH',
     wrappedBaseAssetSymbol: 'WETH',
     baseAssetDecimals: 18,
     explorerLink: 'https://explorer.zksync.io/',
