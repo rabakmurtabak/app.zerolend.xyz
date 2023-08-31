@@ -25,6 +25,11 @@ export const navigation: Navigation[] = [
     dataCy: 'menuMarkets',
   },
   {
+    link: ROUTES.staking,
+    title: t`Stake`,
+    dataCy: 'menuStake',
+  },
+  {
     link: 'https://docs.zerolend.xyz',
     title: t`Documentation`,
     dataCy: 'menuDocs',
