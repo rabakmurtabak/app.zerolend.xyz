@@ -28,6 +28,7 @@ export const navigation: Navigation[] = [
     link: ROUTES.staking,
     title: t`Stake`,
     dataCy: 'menuStake',
+    isVisible: () => process.env.NEXT_PUBLIC_ENV === 'staging' || ENABLE_TESTNET,
   },
   {
     link: 'https://docs.zerolend.xyz',
